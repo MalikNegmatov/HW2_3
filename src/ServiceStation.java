@@ -4,5 +4,7 @@ public class ServiceStation {
         for (int i = 0; i < transport.getWheelsCount(); i++) {
             transport.updateTyre();
         }
+        transport.checkEngine();
+        transport.checkTrailer();
     }
 }

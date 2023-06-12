@@ -1,4 +1,4 @@
-public abstract class TransportDevice implements Service {
+public abstract class TransportDevice {
     private String setModelName;
     private int wheelsCount;
     public String getModelName() {
@@ -13,15 +13,12 @@ public abstract class TransportDevice implements Service {
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
     }
-    @Override
     public void updateTyre(){
         System.out.println("Меняем покрышку");
     }
-    @Override
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
     }
-    @Override
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }

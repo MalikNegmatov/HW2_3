@@ -14,7 +14,6 @@ public class Main {
         truck.setWheelsCount(6);
         truck2.setWheelsCount(8);
 
-
         Bicycle bicycle = new Bicycle();
         Bicycle bicycle2 = new Bicycle();
         bicycle.setModelName("bicycle1");
