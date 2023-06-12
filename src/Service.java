@@ -1,4 +1,5 @@
 public interface Service {
-    default void service() {
-    }
+    void updateTyre();
+    void checkEngine();
+    void checkTrailer();
 }
