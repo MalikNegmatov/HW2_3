@@ -12,7 +12,7 @@ public abstract class TransportDevice implements Serviceable {
     public int getWheelsCount() {
         return wheelsCount;
     }
-
     public void doService() {
+        System.out.println("Обслуживаем " + this.getModelName());
     }
 }
