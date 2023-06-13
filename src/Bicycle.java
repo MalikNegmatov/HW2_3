@@ -1,13 +1,18 @@
-public class Bicycle extends TransportDevice {
-    public Bicycle(String modelName, int wheelsCount) {
-        super(modelName, wheelsCount);
-    }
+    public class Bicycle extends TransportDevice {
+        public Bicycle(String modelName, int wheelsCount) {
+            super(modelName, wheelsCount);
+        }
 
-    @Override
-    public void checkEngine() {
-    }
+        public void updateTyre() {
+            System.out.println("Обслуживаем " + this.getModelName());
+            for (int i = 0; i < this.getWheelsCount(); i++) {
+                System.out.println("Меняем покрышку");
+            }
+        }
 
-    @Override
-    public void checkTrailer() {
+        @Override
+        public void doService() {
+            super.doService();
+            updateTyre();
+        }
     }
-}
