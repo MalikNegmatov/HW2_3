@@ -1,14 +1,14 @@
 public abstract class TransportDevice {
-    private final String ModelName;
+    private final String modelName;
     private final int wheelsCount;
 
     public TransportDevice(String modelName, int wheelsCount) {
-        ModelName = modelName;
+        this.modelName = modelName;
         this.wheelsCount = wheelsCount;
     }
 
     public String getModelName() {
-        return ModelName;
+        return modelName;
     }
 
     public int getWheelsCount() {
